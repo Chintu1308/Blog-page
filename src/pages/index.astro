@@ -1,0 +1,31 @@
+---
+import Header from '../components/Header.astro';
+import BlogLink from '../components/BlogLink.astro';
+import Footer from '../components/Footer.astro';
+
+const blogPosts = [
+  { href: "Blogs/Blog1.html", label: "B1: WHAT I SEE IN IT?" },
+  { href: "Blogs/Blog2.html", label: "B2: Dad's Message" }
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <Header />
+    <div class="right-image"></div>
+    <div class="blog-container">
+      <br><br><h1 class="blog-title">My Blogs</h1></br></br>
+      {blogPosts.map(post => (
+        <BlogLink href={post.href} label={post.label} />
+      ))}
+    </div>
+    <Footer />
+  </body>
+</html>
