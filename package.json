@@ -1,0 +1,16 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "My Astro blog project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "author": "Hari Hara Charan",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^0.25.0"
+  },
+  "devDependencies": {}
+}
